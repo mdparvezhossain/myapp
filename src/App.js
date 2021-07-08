@@ -1,11 +1,11 @@
 import React  from 'react';
-import STATE from './STATE/index';
+import State from './State/index';
 
 const App = () => {
 
     return (
         <div>
-           <STATE />
+           <State />
         </div>
     )
 };
