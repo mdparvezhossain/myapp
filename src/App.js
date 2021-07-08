@@ -1,14 +1,13 @@
 import React  from 'react';
-import State from './components/State/State';
+import STATE from './STATE/index';
 
 const App = () => {
 
     return (
         <div>
-           <State />
+           <STATE />
         </div>
     )
 };
-
 export default App;
 
