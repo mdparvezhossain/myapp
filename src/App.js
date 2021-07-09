@@ -1,11 +1,11 @@
 import React  from 'react';
-import State from './State/index';
+import Form from './components/Form/index';
 
 const App = () => {
 
     return (
         <div>
-           <State />
+            <Form />
         </div>
     )
 };
