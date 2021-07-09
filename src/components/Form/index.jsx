@@ -3,22 +3,16 @@ import './style.css';
 
 function Form() {
 
-   const [name, setName] = useState(' ');
-   const [email, setEmail] = useState(' ');
-   const [password, setPassword] = useState(' ');
+   const [user, setUser] = useState({name: '', email: '', password: ''});
+   const {name, email, password} = user
 
-    const nameChange = (e) =>{
-        setName(e.target.value);
-    }
-    const emailChange = (e) =>{
-        setEmail(e.target.value);
-    }
-    const pwdChange = (e) =>{
-        setPassword(e.target.value);
-    }
+    const handleChange = (e) => {
+     setUser(...user, {[e.target.name]: e.target.value});
+    };
+
     const handleSubmit = (e) =>{
         console.log("Form is Submitted");
-        console.log(name, email, password);
+        console.log(user);
         e.preventDefault();
     }
 
@@ -28,17 +22,38 @@ function Form() {
             <form action="" onSubmit={handleSubmit}>
                <div>
                  <label htmlFor="name">Name  :</label>   
-                 <input type="text" name="name" id="name" value={name} onChange={nameChange} placeholder="Please Enter Your Name" required />
+                 <input 
+                 type="text" 
+                 name="name" 
+                 id="name" 
+                 value={name} 
+                 onChange={handleChange} 
+                 placeholder="Enter Your Name" 
+                 required />
                </div>
                     <br/>
                <div>
                  <label htmlFor="email">Email :</label>   
-                 <input type="email" name="email" id="email" value={email} onChange={emailChange} placeholder="Please Enter Your Email" required />
+                 <input 
+                 type="email" 
+                 name="email" 
+                 id="email" 
+                 value={email} 
+                 onChange={handleChange} 
+                 placeholder="Enter Your Email" 
+                 required />
                </div>
                     <br/>
                <div>
                  <label htmlFor="password">Pswrd :</label>   
-                 <input type="password" name="password" id="password" value={password} onChange={pwdChange}  placeholder="Please Enter Your Password" required />
+                 <input 
+                 type="password" 
+                 name="password" 
+                 id="password" 
+                 value={password} 
+                 onChange={handleChange}  
+                 placeholder="Enter Your Password" 
+                 required />
                </div>
                     <br/>
                <div>   
