@@ -1,11 +1,11 @@
 import React  from 'react';
-import Form from './components/Form/index';
+import Button from './components/Button/index';
 
 const App = () => {
 
     return (
         <div>
-            <Form />
+            <Button />
         </div>
     )
 };
