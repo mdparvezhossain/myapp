@@ -9,7 +9,7 @@ const Button = () => {
 
     return (
         <div className="btn">
-            <h1>Hello, I,m a Button</h1>
+            <h1>Hello, I'm a Button</h1>
             <button onClick={doThis}>Plz Click Me</button>
         </div>
     )
