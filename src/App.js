@@ -1,11 +1,13 @@
 import React  from 'react';
-import Button from './components/Button/index';
+import Index1 from './components/Conditional/index';
+import Index2 from './components/Conditional/index2';
 
 const App = () => {
 
     return (
         <div>
-            <Button />
+            <Index1 />
+            <Index2 />
         </div>
     )
 };
