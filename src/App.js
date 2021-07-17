@@ -1,12 +1,12 @@
 import React  from 'react';
-import Refresh from './components/Refresh/index'
+import Dom from './components/randerDom/index';
 
 
 const App = () => {
 
     return (
         <div>
-           <Refresh />
+           <Dom />
         </div>
     )
 };
