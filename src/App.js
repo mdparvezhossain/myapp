@@ -1,13 +1,12 @@
 import React  from 'react';
-import Index1 from './components/Conditional/index';
-import Index2 from './components/Conditional/index2';
+import Refresh from './components/Refresh/index'
+
 
 const App = () => {
 
     return (
         <div>
-            <Index1 />
-            <Index2 />
+           <Refresh />
         </div>
     )
 };

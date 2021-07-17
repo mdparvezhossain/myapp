@@ -1,0 +1,20 @@
+body{
+    background-color: teal;
+    color: white;
+    text-align: center;
+    font-size: 500;
+    font-weight: bolder;
+}
+button{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: 3px solid tomato;
+    border-radius: 5px;
+    background: teal;
+    color: white;
+    transition: .4s;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
