@@ -1,12 +1,12 @@
 import React  from 'react';
-import Dom from './components/randerDom/index';
+import Image from './components/domNode/index'
 
 
 const App = () => {
 
     return (
         <div>
-           <Dom />
+           <Image />
         </div>
     )
 };
