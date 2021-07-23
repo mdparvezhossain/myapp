@@ -7,7 +7,7 @@ class List extends Component {
     }
 
     render() {
-        const Name = ['Parvez', 'Priya', 'Roton', 'Riya']
+        const Name = ['Parvez', 'Priya', 'Roton', 'Riya', 'Pavel', 'Afsana']
         const myName =  Name.map(this.data)
 
         return (

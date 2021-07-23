@@ -1,12 +1,12 @@
 import React  from 'react';
-import List from './components/formFill/List';
+import JsonList from './components/jsonList/index';
 
 
 const App = () => {
 
     return (
         <div>
-           <List />
+           <JsonList />
         </div>
     )
 };
