@@ -1,12 +1,12 @@
 import React  from 'react';
-import Image from './components/domNode/index'
+import Textarea from './components/formFill/Textarea';
 
 
 const App = () => {
 
     return (
         <div>
-           <Image />
+           <Textarea />
         </div>
     )
 };
