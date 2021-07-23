@@ -1,12 +1,12 @@
 import React  from 'react';
-import Textarea from './components/formFill/Textarea';
+import Selecte from './components/formFill/Selecte';
 
 
 const App = () => {
 
     return (
         <div>
-           <Textarea />
+           <Selecte />
         </div>
     )
 };
