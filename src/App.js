@@ -1,12 +1,12 @@
 import React  from 'react';
-import Selecte from './components/formFill/Selecte';
+import List from './components/formFill/List';
 
 
 const App = () => {
 
     return (
         <div>
-           <Selecte />
+           <List />
         </div>
     )
 };
