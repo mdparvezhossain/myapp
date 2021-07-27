@@ -1,12 +1,12 @@
 import React  from 'react';
-import Post from './components/List/Post';
+import Table from './components/Table/index';
 
 
 const App = () => {
 
     return (
         <div className="App">
-           <Post />
+           <Table />
         </div>
     )
 };
