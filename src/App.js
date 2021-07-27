@@ -1,12 +1,11 @@
 import React  from 'react';
-import JsonList from './components/jsonList/index';
-
+import CountryList from './components/List/getList';
 
 const App = () => {
 
     return (
         <div>
-           <JsonList />
+           <CountryList />
         </div>
     )
 };
