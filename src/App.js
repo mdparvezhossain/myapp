@@ -1,11 +1,12 @@
 import React  from 'react';
+import Post from './components/List/Post';
 
 
 const App = () => {
 
     return (
-        <div>
-           This is Home Page
+        <div className="App">
+           <Post />
         </div>
     )
 };

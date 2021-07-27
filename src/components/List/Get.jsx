@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 
-class CountryList extends Component {
+class GetList extends Component {
 
     constructor(props) {
         super(props)
@@ -10,7 +10,6 @@ class CountryList extends Component {
              mydata: []
         }
     }
-    
 
     componentDidMount(){
         axios.get('https://restcountries.eu/rest/v2/all')
@@ -38,4 +37,4 @@ class CountryList extends Component {
         )
     }
 }
-export default CountryList;
+export default GetList;
