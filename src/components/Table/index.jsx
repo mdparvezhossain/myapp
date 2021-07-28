@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './style.css';
 import ReactTable from 'react-table-6';
 import 'react-table-6/react-table.css';
 import axios from 'axios';
@@ -9,35 +8,35 @@ class Table extends Component {
         super(props)
     
         this.state = {
-             tableInfor: []
+             inputData:[]
         }
     }
-
+    
     componentDidMount(){
         axios.get('https://restcountries.eu/rest/v2/all')
         .then(response=>{
-            this.setState({tableInfor:response.data})
+            this.setState({inputData:response.data})
         })
         .catch(error=>{
-            alert("Something was Wrong")
+            alert("Something was wrong")
         })
     }
 
     render() {
-        const tableData= this.state.tableInfor
-        const col=[
-            {Header:"Country Name", accessor:"name"},
-            {Header:"Capital", accessor:"capital"},
-            {Header:"Population", accessor:"population"}
+        const tableData = this.state.inputData
+        const colHeader = [
+            {Header: "Country Name", accessor: "name"},
+            {Header: "Capital", accessor: "capital"},
+            {Header: "Populations", accessor: "population"}
         ]
 
         return (
             <div>
-                <ReactTable 
+                <ReactTable
                     data={tableData}
-                    columns={col}
+                    columns={colHeader}
                     defaultPageSize={12}
-                    pageSizeOptions={[15,20,30,45,60]}
+                    pageSizeOptions={[10,20,30,40,50]}
                 />
             </div>
         )
