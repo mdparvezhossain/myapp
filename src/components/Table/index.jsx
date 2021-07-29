@@ -8,35 +8,34 @@ class Table extends Component {
         super(props)
     
         this.state = {
-             inputData:[]
+             importData:[]
         }
     }
     
+
     componentDidMount(){
         axios.get('https://restcountries.eu/rest/v2/all')
         .then(response=>{
-            this.setState({inputData:response.data})
+            this.setState({importData:response.data})
         })
         .catch(error=>{
-            alert("Something was wrong")
+            alert("Something was Wrong")
         })
     }
-
     render() {
-        const tableData = this.state.inputData
-        const colHeader = [
+        const data= this.state.importData
+        const colHeader= [
             {Header: "Country Name", accessor: "name"},
             {Header: "Capital", accessor: "capital"},
-            {Header: "Populations", accessor: "population"}
+            {Header: "Population", accessor: "population"}
         ]
-
         return (
             <div>
                 <ReactTable
-                    data={tableData}
+                    data={data}
                     columns={colHeader}
                     defaultPageSize={12}
-                    pageSizeOptions={[10,20,30,40,50]}
+                    pageSizeOptions={[15,20,35,50]}
                 />
             </div>
         )
