@@ -4,6 +4,7 @@ import 'react-table-6/react-table.css';
 import axios from 'axios';
 
 class Table extends Component {
+    
     constructor(props) {
         super(props)
     

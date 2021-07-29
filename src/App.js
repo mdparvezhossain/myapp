@@ -1,15 +1,18 @@
 import React  from 'react';
-// import RouteCom from './components/Route';
-// import Navigation from './components/Navigaton';
-// import { BrowserRouter } from 'react-router-dom';
-import Table from './components/Table/Getdata';
+import RouteCom from './components/Route';
+import Navigation from './components/Navigaton';
+import { BrowserRouter, Route } from 'react-router-dom';
+
 
 
 const App = () => {
 
     return (
-        <div className="App">
-            <Table />
+        <div>
+           <BrowserRouter>
+            <Navigation />
+            <RouteCom />
+           </BrowserRouter>
         </div>
     )
 };
