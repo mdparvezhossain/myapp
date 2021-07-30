@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import {Route, Switch} from 'react-router-dom';
-import Home from './Pages/Home';
-import Header from './Pages/Header';
-import Contact from './Pages/Contact';
-import About from './Pages/About';
-import Footer from './Pages/Footer';
-import Login from './Pages/Login';
+import Home from './Home';
+import Header from './Header';
+import Contact from './Contact';
+import About from './About';
+import Footer from './Footer';
+import Login from './Login';
 
 class RouteCom extends Component {
     render() {

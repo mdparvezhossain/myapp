@@ -1,18 +1,14 @@
 import React  from 'react';
-import RouteCom from './components/Route';
-import Navigation from './components/Navigaton';
-import { BrowserRouter, Route } from 'react-router-dom';
+import Demo from './components/Hooks/Demo';
+
 
 
 
 const App = () => {
 
     return (
-        <div>
-           <BrowserRouter>
-            <Navigation />
-            <RouteCom />
-           </BrowserRouter>
+        <div className="App">
+            <Demo />
         </div>
     )
 };
