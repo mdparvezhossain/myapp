@@ -1,5 +1,7 @@
 import React  from 'react';
-import Demo from './components/Hooks/Demo';
+import './App.css'
+import Sele from './components/ComponentTree/Sele';
+
 
 
 
@@ -8,7 +10,7 @@ const App = () => {
 
     return (
         <div className="App">
-            <Demo />
+            <Sele dada="Puti Name is Md Parvez Hossain"/>
         </div>
     )
 };
