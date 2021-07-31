@@ -5,7 +5,7 @@ class Sele extends Component {
     render() {
         return (
             <div>
-                <Nati sele={this.props.dada}/>
+                <Nati />
             </div>
         )
     }

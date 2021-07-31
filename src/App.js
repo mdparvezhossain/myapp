@@ -1,7 +1,7 @@
 import React  from 'react';
 import './App.css'
 import Sele from './components/ComponentTree/Sele';
-
+import {dataProvider} from './components/ComponentTree/Mycontext';
 
 
 
@@ -10,7 +10,9 @@ const App = () => {
 
     return (
         <div className="App">
-            <Sele dada="Puti Name is Md Parvez Hossain"/>
+            <dataProvider value="Hello Nati How R U ???">
+                <Sele />
+            </dataProvider>          
         </div>
     )
 };

@@ -5,7 +5,7 @@ class Nati extends Component {
     render() {
         return (
             <div>
-                <Puti nati={this.props.sele}/>
+                <Puti />
             </div>
         )
     }
